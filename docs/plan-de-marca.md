@@ -52,7 +52,17 @@
 6. **Confirmar con el Colegio de Médicos** (¿Valencia o Alicante?) los requisitos de publicidad sanitaria de la Comunitat Valenciana antes del lanzamiento.
 7. **Material pendiente:** fotos profesionales (consulta + retrato), enlace del vídeo del Levante UD, artículos de prensa guardados, número de WhatsApp profesional, horarios exactos por sede, teléfono de citas de IMED/Traumacare.
 
-## 5. Roadmap
+## 5. Rediseño v2 (01/09/2026) — feedback de Joel
+
+- **Dirección visual: minimalista** (referencia del cliente: ignaciosaezaviles.es — no accesible desde el entorno de desarrollo; pendiente afinar con capturas). Blanco, tipografía Manrope, un solo acento discreto, mucho espacio, poco texto.
+- **Tono sobrio, sin autobombo**: eliminadas todas las menciones destacadas a "jefe del Levante UD", "deportistas de élite/profesionales" y los enlaces a partes médicos de jugadores. La etapa en el fútbol profesional queda como una línea discreta del CV en "Sobre mí" (patrón similar al de la élite europea: currículum factual, no marketing).
+- **WhatsApp activado**: 681 876 504 (mismo número de Salar) con mensaje precargado; presente en hero, banda CTA, contacto y barra móvil (Llamar · WhatsApp · Cita).
+- **Vídeo Levante UD**: enlazado con miniatura desde "Sobre mí" (https://www.youtube.com/watch?v=YFXDBqkJJaA) — enlaza a YouTube, no se incrusta: sin cookies de terceros y sin necesidad de autorización (enlazar contenido público del canal del club es lícito; no reproducirlo como propio). Antes del lanzamiento: descargar la miniatura y servirla en local (ahora se carga de img.youtube.com).
+- **Colegio confirmado**: Ilustre Colegio Oficial de Médicos de Valencia, colegiado n.º 460311992 (actualizado en aviso legal y footers). NIF pendiente.
+- **Dominio registrado** por Joel (drjoelgambin.com); añadido fichero CNAME para GitHub Pages.
+- **Pendiente de Joel**: fotos (retrato + consulta), capturas de la web de referencia para afinar el diseño, NIF, registros sanitarios de los centros, días de consulta en Salar.
+
+## 6. Roadmap
 
 | Fase | Contenido | Estado |
 |---|---|---|
