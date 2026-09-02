@@ -72,4 +72,12 @@
     <loc>https://drjoelgambin.com/en/treatments/meniscus-repair/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/sutura-menisco/"/>
   </url>
+  <url>
+    <loc>https://drjoelgambin.com/tratamientos/microinestabilidad-tobillo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/ankle-microinstability/"/>
+  </url>
+  <url>
+    <loc>https://drjoelgambin.com/en/treatments/ankle-microinstability/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/microinestabilidad-tobillo/"/>
+  </url>
 </urlset>
