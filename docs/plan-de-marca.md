@@ -62,7 +62,11 @@
 - **Dominio registrado** por Joel (drjoelgambin.com); añadido fichero CNAME para GitHub Pages.
 - **Pendiente de Joel**: fotos (retrato + consulta), capturas de la web de referencia para afinar el diseño, NIF, registros sanitarios de los centros, días de consulta en Salar.
 
-## 6. Roadmap
+## 6. Rediseño v3 (02/09/2026) — estilo de referencia aplicado
+
+Joel aportó capturas de la web de referencia (ignaciosaezaviles.es) y se aplicó su lenguaje visual completo: fondo blanco con secciones azul cielo muy suave (#EAF4F9), titulares en azul petróleo (#17404E), eyebrows azul claro sin mayúsculas, **botones negros tipo píldora**, tarjetas redondeadas (20px) con sombra suave, tipografía **Lato**, tarjetas dúo en el hero (checklist blanca + panel oscuro de cita), tarjetas de servicio con zona de foto (placeholders degradados hasta tener fotos reales), sección "¿Por qué elegir?" con retrato + tarjeta de checks, banda de sedes en panel verde azulado oscuro con pines, y footer oscuro. Nota de cumplimiento: la referencia muestra tarjetas de opiniones con citas y avatares; en la web de Joel la sección replica el estilo visual pero muestra únicamente la valoración agregada real de Doctoralia (5,0 · 12 opiniones) enlazada, sin citas fabricadas, conforme a la normativa de publicidad sanitaria.
+
+## 7. Roadmap
 
 | Fase | Contenido | Estado |
 |---|---|---|
