@@ -64,4 +64,12 @@
     <loc>https://drjoelgambin.com/en/treatments/lemaire-tenodesis/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/tenodesis-lemaire/"/>
   </url>
+  <url>
+    <loc>https://drjoelgambin.com/tratamientos/sutura-menisco/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/meniscus-repair/"/>
+  </url>
+  <url>
+    <loc>https://drjoelgambin.com/en/treatments/meniscus-repair/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/sutura-menisco/"/>
+  </url>
 </urlset>
