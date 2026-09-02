@@ -56,4 +56,12 @@
     <loc>https://drjoelgambin.com/en/contact/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/contacto/"/>
   </url>
+  <url>
+    <loc>https://drjoelgambin.com/tratamientos/tenodesis-lemaire/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/lemaire-tenodesis/"/>
+  </url>
+  <url>
+    <loc>https://drjoelgambin.com/en/treatments/lemaire-tenodesis/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/tenodesis-lemaire/"/>
+  </url>
 </urlset>
