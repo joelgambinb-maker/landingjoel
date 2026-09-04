@@ -503,12 +503,13 @@ table.compare { border-collapse: collapse; width: 100%; font-size: 14px; min-wid
 .t-row:hover h3 { color: var(--teal); }
 @media (max-width: 680px) { .t-row { grid-template-columns: 1fr auto; } .t-row p { grid-column: 1 / -1; } }
 
-/* ---------- Reserva online (widget Doctoralia, carga bajo demanda) ---------- */
-button.btn { font-family: inherit; cursor: pointer; }
+/* ---------- Reserva online (widget Doctoralia, carga diferida vía site.js) ---------- */
 .booking { background: #fff; border-radius: var(--r-card); box-shadow: var(--shadow); padding: 30px 32px 26px; margin: 0 0 40px; max-width: 660px; }
 .booking h2 { margin-top: 0; }
 .booking > p { max-width: none; }
-.bw-frame { margin-top: 20px; display: flex; justify-content: center; }
-.bw-frame[hidden] { display: none; }
+.bw-frame { margin-top: 20px; display: flex; justify-content: center; align-items: center; min-height: 140px; }
 .bw-frame iframe { max-width: 100%; border: 0; }
 .bw-note { font-size: 12.5px; color: var(--muted); margin: 16px 0 0; }
+.booking-band { text-align: center; }
+.booking-band .booking { margin: 0 auto; text-align: left; }
+.booking-band .bw-frame { margin-top: 0; }
