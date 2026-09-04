@@ -42,8 +42,17 @@
   <div class="wrap">
     <div class="btn-row" style="margin-bottom:38px">
       <a class="btn" href="tel:+34681876504">Llamar: +34 681 87 65 04</a>
-      <a class="btn ghost" href="https://www.doctoralia.es/joel-gambin-botella/traumatologo-especialista-en-medicina-del-deporte/torrevieja" rel="noopener" target="_blank">Reservar online (Doctoralia)</a>
       <a class="btn ghost" href="https://wa.me/34681876504?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20cita%20con%20el%20Dr.%20Gamb%C3%ADn" rel="noopener" target="_blank">WhatsApp</a>
+    </div>
+
+    <div class="booking" id="reservar">
+      <h2>Reserva online</h2>
+      <p>Elige día y hora en el calendario de Doctoralia, con confirmación inmediata y disponible las 24 horas.</p>
+      <button class="btn" id="bw-load" type="button">Ver calendario y reservar</button>
+      <div class="bw-frame" id="bw-frame" hidden>
+        <a id="zl-url" class="zl-url" href="https://www.doctoralia.es/joel-gambin-botella/traumatologo-especialista-en-medicina-del-deporte/elche" rel="nofollow" data-zlw-doctor="joel-gambin-botella" data-zlw-type="big" data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="true" data-zlw-a11y-title="Widget de reserva de citas médicas">Reserva una cita en Doctoralia</a>
+      </div>
+      <p class="bw-note">El calendario lo proporciona Doctoralia (Docplanner) y se carga únicamente al pulsar el botón; ese servicio puede usar sus propias cookies técnicas. Si lo prefieres, también puedes reservar <a href="https://www.doctoralia.es/joel-gambin-botella/traumatologo-especialista-en-medicina-del-deporte/torrevieja" rel="noopener" target="_blank">directamente en Doctoralia</a>.</p>
     </div>
 
     <div class="cards">
@@ -126,6 +135,22 @@
   <a class="book" href="https://www.doctoralia.es/joel-gambin-botella/traumatologo-especialista-en-medicina-del-deporte/torrevieja" rel="noopener" target="_blank">Cita</a>
 </div>
 
+<script>
+(function () {
+  var b = document.getElementById('bw-load');
+  if (!b) return;
+  b.addEventListener('click', function () {
+    b.hidden = true;
+    document.getElementById('bw-frame').hidden = false;
+    if (!document.getElementById('zl-widget-s')) {
+      var js = document.createElement('script');
+      js.id = 'zl-widget-s';
+      js.src = 'https://platform.docplanner.com/js/widget.js';
+      document.body.appendChild(js);
+    }
+  });
+})();
+</script>
 <script src="/assets/site.js"></script>
 </body>
 </html>
