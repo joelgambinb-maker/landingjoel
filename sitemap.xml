@@ -3,6 +3,10 @@
   <url>
     <loc>https://drjoelgambin.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drjoelgambin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://drjoelgambin.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://drjoelgambin.com/no/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://drjoelgambin.com/sv/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/sobre-mi/</loc>
@@ -31,6 +35,10 @@
   <url>
     <loc>https://drjoelgambin.com/en/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drjoelgambin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://drjoelgambin.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://drjoelgambin.com/no/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://drjoelgambin.com/sv/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/about/</loc>
@@ -79,5 +87,37 @@
   <url>
     <loc>https://drjoelgambin.com/en/treatments/ankle-microinstability/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/microinestabilidad-tobillo/"/>
+  </url>
+  <url>
+    <loc>https://drjoelgambin.com/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://drjoelgambin.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://drjoelgambin.com/no/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://drjoelgambin.com/sv/"/>
+  </url>
+  <url>
+    <loc>https://drjoelgambin.com/uk/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drjoelgambin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://drjoelgambin.com/no/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://drjoelgambin.com/sv/"/>
+  </url>
+  <url>
+    <loc>https://drjoelgambin.com/no/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drjoelgambin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://drjoelgambin.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://drjoelgambin.com/sv/"/>
+  </url>
+  <url>
+    <loc>https://drjoelgambin.com/sv/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drjoelgambin.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://drjoelgambin.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://drjoelgambin.com/no/"/>
   </url>
 </urlset>
