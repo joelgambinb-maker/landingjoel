@@ -49,7 +49,7 @@ strong { font-weight: 700; }
 ul { padding-left: 20px; }
 li { margin: 6px 0; }
 
-.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 .narrow { max-width: 740px; }
 
 .eyebrow {
