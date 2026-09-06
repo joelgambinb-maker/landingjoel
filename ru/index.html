@@ -11,16 +11,21 @@
 <link rel="canonical" href="https://drjoelgambin.com/ru/">
 <link rel="alternate" hreflang="es" href="https://drjoelgambin.com">
 <link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/">
-<link rel="alternate" hreflang="ru" href="https://drjoelgambin.com/ru/">
-<link rel="alternate" hreflang="uk" href="https://drjoelgambin.com/uk/">
+<link rel="alternate" hreflang="de" href="https://drjoelgambin.com/de/">
+<link rel="alternate" hreflang="fr" href="https://drjoelgambin.com/fr/">
+<link rel="alternate" hreflang="nl" href="https://drjoelgambin.com/nl/">
 <link rel="alternate" hreflang="no" href="https://drjoelgambin.com/no/">
 <link rel="alternate" hreflang="sv" href="https://drjoelgambin.com/sv/">
+<link rel="alternate" hreflang="pl" href="https://drjoelgambin.com/pl/">
 <link rel="alternate" hreflang="ro" href="https://drjoelgambin.com/ro/">
+<link rel="alternate" hreflang="bg" href="https://drjoelgambin.com/bg/">
+<link rel="alternate" hreflang="ru" href="https://drjoelgambin.com/ru/">
+<link rel="alternate" hreflang="uk" href="https://drjoelgambin.com/uk/">
 <link rel="alternate" hreflang="x-default" href="https://drjoelgambin.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap">
-<link rel="stylesheet" href="/assets/styles.css?v=12">
+<link rel="stylesheet" href="/assets/styles.css?v=13">
 </head>
 <body>
 
@@ -32,15 +37,23 @@
       <a href="#servicios">Услуги</a>
       <a href="#sedes">Клиники</a>
       <a href="#reservar">Запись</a>
-      <div class="langs">
-        <a href="/" hreflang="es" lang="es" title="Español"><img src="/assets/img/flags/es.svg" alt="Español" width="21" height="15"></a>
-        <a href="/en/" hreflang="en" lang="en" title="English"><img src="/assets/img/flags/gb.svg" alt="English" width="21" height="15"></a>
-        <a href="/ru/" class="on" hreflang="ru" lang="ru" title="Русский"><img src="/assets/img/flags/ru.svg" alt="Русский" width="21" height="15"></a>
-        <a href="/uk/" hreflang="uk" lang="uk" title="Українська"><img src="/assets/img/flags/ua.svg" alt="Українська" width="21" height="15"></a>
-        <a href="/no/" hreflang="no" lang="no" title="Norsk"><img src="/assets/img/flags/no.svg" alt="Norsk" width="21" height="15"></a>
-        <a href="/sv/" hreflang="sv" lang="sv" title="Svenska"><img src="/assets/img/flags/se.svg" alt="Svenska" width="21" height="15"></a>
-        <a href="/ro/" hreflang="ro" lang="ro" title="Română"><img src="/assets/img/flags/ro.svg" alt="Română" width="21" height="15"></a>
-      </div>
+      <details class="lang-menu">
+        <summary title="Язык" aria-label="Язык"><img src="/assets/img/flags/ru.svg" alt="" width="21" height="15"><span>RU</span><svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.5l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+        <ul>
+          <li><a href="/" hreflang="es" lang="es"><img src="/assets/img/flags/es.svg" alt="" width="21" height="15">Español</a></li>
+          <li><a href="/en/" hreflang="en" lang="en"><img src="/assets/img/flags/gb.svg" alt="" width="21" height="15">English</a></li>
+          <li><a href="/de/" hreflang="de" lang="de"><img src="/assets/img/flags/de.svg" alt="" width="21" height="15">Deutsch</a></li>
+          <li><a href="/fr/" hreflang="fr" lang="fr"><img src="/assets/img/flags/fr.svg" alt="" width="21" height="15">Français</a></li>
+          <li><a href="/nl/" hreflang="nl" lang="nl"><img src="/assets/img/flags/nl.svg" alt="" width="21" height="15">Nederlands</a></li>
+          <li><a href="/no/" hreflang="no" lang="no"><img src="/assets/img/flags/no.svg" alt="" width="21" height="15">Norsk</a></li>
+          <li><a href="/sv/" hreflang="sv" lang="sv"><img src="/assets/img/flags/se.svg" alt="" width="21" height="15">Svenska</a></li>
+          <li><a href="/pl/" hreflang="pl" lang="pl"><img src="/assets/img/flags/pl.svg" alt="" width="21" height="15">Polski</a></li>
+          <li><a href="/ro/" hreflang="ro" lang="ro"><img src="/assets/img/flags/ro.svg" alt="" width="21" height="15">Română</a></li>
+          <li><a href="/bg/" hreflang="bg" lang="bg"><img src="/assets/img/flags/bg.svg" alt="" width="21" height="15">Български</a></li>
+          <li><a href="/ru/" class="on" hreflang="ru" lang="ru"><img src="/assets/img/flags/ru.svg" alt="" width="21" height="15">Русский</a></li>
+          <li><a href="/uk/" hreflang="uk" lang="uk"><img src="/assets/img/flags/ua.svg" alt="" width="21" height="15">Українська</a></li>
+        </ul>
+      </details>
     </nav>
   </div>
 </header>
@@ -175,14 +188,19 @@
       </div>
       <div>
         <h4>Другие языки</h4>
-        <ul>
+        <ul class="lang-list">
           <li><a href="/" hreflang="es" lang="es">Español</a></li>
           <li><a href="/en/" hreflang="en" lang="en">English</a></li>
-          <li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li>
-          <li><a href="/uk/" hreflang="uk" lang="uk">Українська</a></li>
+          <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+          <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li>
           <li><a href="/no/" hreflang="no" lang="no">Norsk</a></li>
           <li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li>
+          <li><a href="/pl/" hreflang="pl" lang="pl">Polski</a></li>
           <li><a href="/ro/" hreflang="ro" lang="ro">Română</a></li>
+          <li><a href="/bg/" hreflang="bg" lang="bg">Български</a></li>
+          <li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li>
+          <li><a href="/uk/" hreflang="uk" lang="uk">Українська</a></li>
         </ul>
       </div>
       <div>
@@ -206,6 +224,6 @@
   <a class="book" href="#reservar">Запись</a>
 </div>
 
-<script src="/assets/site.js?v=12"></script>
+<script src="/assets/site.js?v=13"></script>
 </body>
 </html>

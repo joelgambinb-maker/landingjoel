@@ -39,6 +39,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Selector de idioma: se cierra al pulsar fuera o con Escape.
+  var menu = document.querySelector(".lang-menu");
+  if (menu) {
+    document.addEventListener("click", function (e) {
+      if (menu.open && !menu.contains(e.target)) menu.open = false;
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && menu.open) menu.open = false;
+    });
+  }
+
   // Widget de reserva de Doctoralia: el script se carga cuando el
   // calendario se acerca al viewport, para no penalizar la carga inicial.
   var frame = document.querySelector(".bw-frame");
