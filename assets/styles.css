@@ -547,31 +547,12 @@ table.compare { border-collapse: collapse; width: 100%; font-size: 14px; min-wid
   .hero-cards .duo { margin-top: -70px; }
 }
 
-/* ---------- Opiniones: panel visual ---------- */
-.review-panel { background: var(--panel); color: var(--on-panel); border-radius: var(--r-card); box-shadow: var(--shadow); display: grid; grid-template-columns: auto 1fr; gap: 46px; align-items: center; padding: 46px 52px; }
-.rp-score { text-align: center; padding-right: 46px; border-right: 1px solid rgba(255, 255, 255, 0.16); }
-.rp-score .num { display: block; font-size: 78px; font-weight: 800; color: #FFFFFF; line-height: 1; }
-.rp-score .stars { display: block; color: #E9C46A; font-size: 24px; letter-spacing: 6px; text-indent: 6px; margin: 10px 0 12px; }
-.rp-score .lbl { display: block; font-size: 13px; line-height: 1.45; }
-.rp-info h2 { color: #FFFFFF; margin-bottom: 4px; }
-.rp-info .eyebrow { color: #A9C4CD; }
-.rp-verified { display: flex; align-items: center; gap: 9px; font-size: 15.5px; margin: 12px 0 24px; }
-.rp-verified svg { width: 21px; height: 21px; color: #8FD6A9; flex: none; }
-.btn.inverse { background: #FFFFFF; color: var(--head); border-color: #FFFFFF; }
-.btn.inverse:hover { color: var(--teal); opacity: 1; }
-@media (max-width: 760px) {
-  .review-panel { grid-template-columns: 1fr; gap: 26px; padding: 34px 26px; text-align: center; }
-  .rp-score { padding-right: 0; border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.16); padding-bottom: 24px; }
-  .rp-verified { justify-content: center; }
-}
-
-/* ---------- Rasgos con icono (por qué elegir) ---------- */
-.feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 20px; margin: 22px 0 26px; }
-.feat { display: flex; align-items: center; gap: 12px; background: #FFFFFF; border-radius: 14px; padding: 13px 16px; box-shadow: var(--shadow); font-size: 14.5px; font-weight: 600; color: var(--ink); }
-.feat:last-child:nth-child(odd) { grid-column: 1 / -1; }
-.feat .fi { width: 38px; height: 38px; flex: none; border-radius: 11px; background: var(--bg-soft); color: var(--teal); display: flex; align-items: center; justify-content: center; }
-.feat .fi svg { width: 21px; height: 21px; stroke: currentColor; fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
-@media (max-width: 680px) { .feature-grid { grid-template-columns: 1fr; } }
+/* ---------- Línea de valoración (por qué elegir) ---------- */
+.rating-line { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 24px 0 26px; padding-top: 22px; border-top: 1px solid var(--line); font-weight: 700; color: var(--head); font-size: 16.5px; }
+.rating-line .stars { color: #E9C46A; letter-spacing: 3px; }
+.rating-line .sep { color: var(--muted); font-weight: 400; }
+.rating-line a { font-weight: 600; color: var(--muted); }
+.rating-line a:hover { color: var(--teal); }
 .section-head h2 { font-size: clamp(25px, 2.8vw, 32px); }
 
 /* ---------- Franja de colaboradores ---------- */
