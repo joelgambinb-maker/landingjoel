@@ -604,3 +604,12 @@ table.compare { border-collapse: collapse; width: 100%; font-size: 14px; min-wid
 }
 .site-footer .lang-list { column-count: 2; column-gap: 20px; }
 .site-footer .lang-list li { break-inside: avoid; }
+
+/* Respaldo para páginas antiguas aún en caché que conservan la fila de banderas */
+.langs { display: flex; align-items: center; gap: 7px; }
+.langs img { width: 21px; height: 15px; border-radius: 3.5px; display: block; }
+
+/* Titular del hero en pantallas estrechas: los idiomas con palabras largas (sueco, alemán) no deben desbordar */
+@media (max-width: 480px) {
+  .hero-photo h1 { overflow-wrap: anywhere; }
+}
