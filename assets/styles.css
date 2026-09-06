@@ -573,3 +573,11 @@ table.compare { border-collapse: collapse; width: 100%; font-size: 14px; min-wid
 .feat .fi svg { width: 21px; height: 21px; stroke: currentColor; fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 @media (max-width: 680px) { .feature-grid { grid-template-columns: 1fr; } }
 .section-head h2 { font-size: clamp(25px, 2.8vw, 32px); }
+
+/* ---------- Franja de colaboradores ---------- */
+.partners { display: flex; align-items: center; justify-content: center; gap: 46px; flex-wrap: wrap; margin-top: 44px; padding-top: 34px; border-top: 1px solid var(--line); }
+.partners .p-label { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.partners a { display: block; line-height: 0; opacity: 0.8; transition: opacity 0.15s ease; }
+.partners a:hover { opacity: 1; }
+.partners img { height: 34px; width: auto; }
+.partners img.tall { height: 44px; }
