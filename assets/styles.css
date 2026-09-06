@@ -537,7 +537,13 @@ table.compare { border-collapse: collapse; width: 100%; font-size: 14px; min-wid
 .hero-photo .inner { position: relative; z-index: 1; width: 100%; padding-top: 90px; padding-bottom: 150px; }
 .hero-photo h1 { color: #fff; max-width: 15ch; font-size: clamp(36px, 5.2vw, 56px); text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35); }
 .hero-photo .lead { color: #DCE6EB; font-size: clamp(17px, 1.8vw, 20px); max-width: 46ch; margin: 18px 0 0; }
-.hero-photo .cred-line { color: #A9C0C9; border-top-color: rgba(255, 255, 255, 0.22); }
+.hero-photo .cred-row { display: flex; align-items: center; gap: 28px; row-gap: 16px; flex-wrap: wrap; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.22); }
+.hero-photo .cred-row .plogo { line-height: 0; opacity: 0.85; transition: opacity 0.15s ease; }
+.hero-photo .cred-row .plogo:hover { opacity: 1; }
+.hero-photo .cred-row .plogo img { filter: brightness(0) invert(1); width: auto; }
+.hero-photo .cred-row .plogo .l-salar { height: 32px; }
+.hero-photo .cred-row .plogo .l-trauma { height: 22px; }
+.hero-photo .cred-row .cred-text { font-size: 12.5px; letter-spacing: 0.04em; color: #A9C0C9; }
 .hero-cards .duo { margin-top: -92px; position: relative; z-index: 2; }
 @media (max-width: 820px) {
   .hero-photo { min-height: 64vh; }
@@ -554,14 +560,6 @@ table.compare { border-collapse: collapse; width: 100%; font-size: 14px; min-wid
 .rating-line a { font-weight: 600; color: var(--muted); }
 .rating-line a:hover { color: var(--teal); }
 .section-head h2 { font-size: clamp(25px, 2.8vw, 32px); }
-
-/* ---------- Franja de colaboradores ---------- */
-.partners { display: flex; align-items: center; justify-content: center; gap: 46px; flex-wrap: wrap; margin-top: 44px; padding-top: 34px; border-top: 1px solid var(--line); }
-.partners .p-label { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
-.partners a { display: block; line-height: 0; opacity: 0.8; transition: opacity 0.15s ease; }
-.partners a:hover { opacity: 1; }
-.partners img { height: 34px; width: auto; }
-.partners img.tall { height: 44px; }
 
 /* ---------- Sedes con mapa ---------- */
 .sede-maps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
