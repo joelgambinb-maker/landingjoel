@@ -1,3 +1,31 @@
+document.documentElement.classList.add("js");
+
+// Transiciones sutiles entre zonas: los bloques aparecen al entrar en pantalla.
+(function () {
+  var groups = document.querySelectorAll(".service-cards, .duo, .why-grid, .related .cards, .graft-cards");
+  var singles = document.querySelectorAll(".section-head, .sede-band, .booking, .split-row, .evidence, .diagram, .tablewrap");
+  groups.forEach(function (el) { el.classList.add("reveal-group"); });
+  singles.forEach(function (el) { el.classList.add("reveal"); });
+  var pending = Array.prototype.slice.call(document.querySelectorAll(".reveal, .reveal-group"));
+  if (!pending.length) return;
+  function check() {
+    var limit = window.innerHeight * 0.94;
+    pending = pending.filter(function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < limit) { el.classList.add("in"); return false; }
+      return true;
+    });
+    if (!pending.length) {
+      window.removeEventListener("scroll", check);
+      window.removeEventListener("resize", check);
+    }
+  }
+  check();
+  window.addEventListener("scroll", check, { passive: true });
+  window.addEventListener("resize", check);
+  window.addEventListener("load", check);
+})();
+
 document.addEventListener("DOMContentLoaded", function () {
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".nav");
