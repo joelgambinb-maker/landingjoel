@@ -163,7 +163,7 @@ li { margin: 6px 0; }
 }
 
 /* ---------- Tarjetas dúo (blanca + panel oscuro) ---------- */
-.duo { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 24px; margin-top: 44px; }
+.duo { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 24px; margin-top: 44px; align-items: start; }
 @media (max-width: 820px) { .duo { grid-template-columns: 1fr; } }
 .duo-white, .duo-dark { border-radius: var(--r-card); padding: 32px 34px; box-shadow: var(--shadow); }
 .duo-white { background: #fff; }
@@ -173,6 +173,10 @@ li { margin: 6px 0; }
 .duo-dark p { color: var(--on-panel); font-size: 15.5px; }
 .duo-white .go { font-weight: 700; text-decoration: none; }
 .duo-white .go:hover { color: var(--teal); }
+.duo-dark .bw-frame { background: #fff; border-radius: 14px; padding: 8px; margin-top: 18px; }
+.duo-dark .bw-frame .zl-url { color: var(--head); font-weight: 700; }
+.duo-dark .bw-note { color: var(--on-panel); }
+.duo-dark .bw-note a { color: #fff; }
 
 .check-list { list-style: none; padding: 0; margin: 0; }
 .check-list li { padding: 8px 0 8px 34px; position: relative; font-weight: 600; color: var(--ink); }
