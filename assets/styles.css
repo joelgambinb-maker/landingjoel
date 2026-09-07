@@ -631,3 +631,14 @@ table.compare { border-collapse: collapse; width: 100%; font-size: 14px; min-wid
 .cookie-bar button:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
 @media (max-width: 880px) { .cookie-bar { bottom: 82px; left: 10px; right: 10px; padding: 14px 16px; } .cookie-bar .cb-actions { width: 100%; } .cookie-bar button { flex: 1; } }
 .site-footer .cookie-settings { text-decoration: underline; }
+
+/* ---------- Páginas de ciudad: mapa en artículo y enlaces en las sedes ---------- */
+.sede-band .more { margin-top: 8px; font-size: 13.5px; }
+.sede-band .more a { color: #fff; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.4); text-underline-offset: 3px; }
+.sede-band .more a:hover { text-decoration-color: #fff; }
+.article .map { margin: 26px 0 0; }
+.article .map iframe { width: 100%; height: 340px; border: 0; display: block; border-radius: 16px; box-shadow: var(--shadow); }
+.article .map .map-load { display: flex; align-items: center; justify-content: center; gap: 9px; height: 220px; border-radius: 16px; background: var(--bg-soft); border: 1px dashed var(--line); color: var(--head); font-weight: 700; font-size: 14.5px; text-decoration: none; transition: background 0.15s ease, border-color 0.15s ease; }
+.article .map .map-load:hover { background: #fff; border-color: var(--sky); }
+.article .service-cards { margin-top: 18px; }
+.article .btn-row { margin-top: 22px; }
