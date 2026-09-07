@@ -2,7 +2,8 @@ document.documentElement.classList.add("js");
 
 // Google Ads: etiqueta AW-18436478485. Las etiquetas de cada conversión se rellenan cuando Google las facilita.
 var ADS_ID = "AW-18436478485";
-var ADS_LABELS = { Llamada: "", WhatsApp: "", Reserva: "dmCOCIGPz_AcEJWsmddE" };
+// De momento, llamada y WhatsApp cuentan como "Reserva de cita" (una sola conversión de contacto).
+var ADS_LABELS = { Llamada: "dmCOCIGPz_AcEJWsmddE", WhatsApp: "dmCOCIGPz_AcEJWsmddE", Reserva: "dmCOCIGPz_AcEJWsmddE" };
 
 
 // Transiciones sutiles entre zonas: los bloques aparecen al entrar en pantalla.
