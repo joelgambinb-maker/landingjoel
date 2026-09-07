@@ -1,5 +1,10 @@
 document.documentElement.classList.add("js");
 
+// Google Ads: etiqueta AW-18436478485. Las etiquetas de cada conversión se rellenan cuando Google las facilita.
+var ADS_ID = "AW-18436478485";
+var ADS_LABELS = { Llamada: "", WhatsApp: "", Reserva: "" };
+
+
 // Transiciones sutiles entre zonas: los bloques aparecen al entrar en pantalla.
 (function () {
   var groups = document.querySelectorAll(".service-cards, .duo, .why-grid, .related .cards, .graft-cards");
@@ -50,9 +55,58 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Aviso de cookies: solo gobierna la etiqueta de Google Ads (modo de consentimiento).
+  var CB = {
+    es: ["Usamos cookies solo para medir si nuestros anuncios de Google traen pacientes. Sin tu permiso no se instala ninguna cookie.", "Más información", "Aceptar", "Rechazar"],
+    en: ["We use cookies only to measure whether our Google ads bring patients. Without your permission no cookie is set.", "More information", "Accept", "Reject"],
+    de: ["Wir verwenden Cookies nur, um zu messen, ob unsere Google-Anzeigen Patienten bringen. Ohne Ihre Zustimmung wird kein Cookie gesetzt.", "Mehr erfahren", "Akzeptieren", "Ablehnen"],
+    fr: ["Nous utilisons des cookies uniquement pour mesurer si nos annonces Google nous amènent des patients. Sans votre accord, aucun cookie n'est déposé.", "En savoir plus", "Accepter", "Refuser"],
+    nl: ["We gebruiken cookies alleen om te meten of onze Google-advertenties patiënten opleveren. Zonder uw toestemming wordt geen cookie geplaatst.", "Meer informatie", "Accepteren", "Weigeren"],
+    no: ["Vi bruker informasjonskapsler bare for å måle om Google-annonsene våre gir pasienter. Uten ditt samtykke settes ingen informasjonskapsler.", "Mer informasjon", "Godta", "Avslå"],
+    sv: ["Vi använder cookies enbart för att mäta om våra Google-annonser ger patienter. Utan ditt samtycke sätts inga cookies.", "Mer information", "Acceptera", "Avböj"],
+    pl: ["Używamy plików cookie wyłącznie po to, aby mierzyć, czy nasze reklamy Google przynoszą pacjentów. Bez Twojej zgody żaden plik cookie nie zostanie zapisany.", "Więcej informacji", "Akceptuję", "Odrzucam"],
+    ro: ["Folosim cookie-uri doar pentru a măsura dacă anunțurile noastre Google aduc pacienți. Fără acordul dumneavoastră nu se instalează niciun cookie.", "Mai multe informații", "Accept", "Refuz"],
+    bg: ["Използваме бисквитки само за да измерим дали рекламите ни в Google водят пациенти. Без вашето съгласие не се инсталира никаква бисквитка.", "Повече информация", "Приемам", "Отказвам"],
+    ru: ["Мы используем cookie только для того, чтобы понять, приводит ли наша реклама в Google пациентов. Без вашего согласия cookie не устанавливаются.", "Подробнее", "Принять", "Отклонить"],
+    uk: ["Ми використовуємо cookie лише для того, щоб зрозуміти, чи приводить наша реклама в Google пацієнтів. Без вашої згоди cookie не встановлюються.", "Докладніше", "Прийняти", "Відхилити"]
+  };
+  function consentStored() {
+    try {
+      var c = JSON.parse(localStorage.getItem("jg-consent") || "null");
+      return c && (Date.now() - c.t < 31536000000) ? c.v : null;
+    } catch (e) { return null; }
+  }
+  function saveConsent(v) {
+    try { localStorage.setItem("jg-consent", JSON.stringify({ v: v, t: Date.now() })); } catch (e) {}
+    if (typeof window.gtag === "function") {
+      var s = v === "granted" ? "granted" : "denied";
+      window.gtag("consent", "update", { ad_storage: s, ad_user_data: s, ad_personalization: s });
+    }
+  }
+  function showBanner() {
+    if (document.querySelector(".cookie-bar")) return;
+    var t = CB[document.documentElement.lang] || CB.es;
+    var bar = document.createElement("div");
+    bar.className = "cookie-bar";
+    bar.setAttribute("role", "dialog");
+    bar.setAttribute("aria-label", "Cookies");
+    bar.innerHTML = '<p>' + t[0] + ' <a href="/privacidad/#cookies">' + t[1] + '</a></p>' +
+      '<div class="cb-actions"><button type="button" class="cb-reject">' + t[3] + '</button><button type="button" class="cb-accept">' + t[2] + '</button></div>';
+    bar.querySelector(".cb-accept").addEventListener("click", function () { saveConsent("granted"); bar.remove(); });
+    bar.querySelector(".cb-reject").addEventListener("click", function () { saveConsent("denied"); bar.remove(); });
+    document.body.appendChild(bar);
+  }
+  if (!consentStored()) showBanner();
+  document.querySelectorAll(".cookie-settings").forEach(function (a) {
+    a.addEventListener("click", function (e) { e.preventDefault(); showBanner(); });
+  });
+
   // Medición sin cookies (Plausible): llamada, WhatsApp, reserva, idioma y mapa.
   function track(name, props) {
     if (typeof window.plausible === "function") window.plausible(name, { props: props || {} });
+    if (ADS_LABELS[name] && typeof window.gtag === "function") {
+      window.gtag("event", "conversion", { send_to: ADS_ID + "/" + ADS_LABELS[name] });
+    }
   }
   document.addEventListener("click", function (e) {
     var a = e.target.closest ? e.target.closest("a") : null;
