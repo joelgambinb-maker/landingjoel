@@ -2,7 +2,7 @@ document.documentElement.classList.add("js");
 
 // Google Ads: etiqueta AW-18436478485. Las etiquetas de cada conversión se rellenan cuando Google las facilita.
 var ADS_ID = "AW-18436478485";
-var ADS_LABELS = { Llamada: "", WhatsApp: "", Reserva: "" };
+var ADS_LABELS = { Llamada: "", WhatsApp: "", Reserva: "dmCOCIGPz_AcEJWsmddE" };
 
 
 // Transiciones sutiles entre zonas: los bloques aparecen al entrar en pantalla.
