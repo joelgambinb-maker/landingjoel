@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://drjoelgambin.com/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://drjoelgambin.com/de/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://drjoelgambin.com/fr/"/>
@@ -16,30 +17,37 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/sobre-mi/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/about/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/ligamento-cruzado-anterior/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/acl-surgery/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/artroscopia-rodilla/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/knee-arthroscopy/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/artroscopia-tobillo/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/ankle-arthroscopy/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/preservacion-articular/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/joint-preservation/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/contacto/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/contact/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://drjoelgambin.com/de/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://drjoelgambin.com/fr/"/>
@@ -54,54 +62,67 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/about/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/sobre-mi/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/acl-surgery/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/ligamento-cruzado-anterior/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/knee-arthroscopy/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/artroscopia-rodilla/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/ankle-arthroscopy/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/artroscopia-tobillo/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/joint-preservation/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/preservacion-articular/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/contact/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/contacto/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/tenodesis-lemaire/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/lemaire-tenodesis/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/lemaire-tenodesis/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/tenodesis-lemaire/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/sutura-menisco/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/meniscus-repair/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/meniscus-repair/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/sutura-menisco/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/microinestabilidad-tobillo/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/ankle-microinstability/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/ankle-microinstability/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/microinestabilidad-tobillo/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/de/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://drjoelgambin.com/fr/"/>
@@ -116,6 +137,7 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/fr/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://drjoelgambin.com/de/"/>
@@ -130,6 +152,7 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/nl/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://drjoelgambin.com/de/"/>
@@ -144,6 +167,7 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/no/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://drjoelgambin.com/de/"/>
@@ -158,6 +182,7 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/sv/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://drjoelgambin.com/de/"/>
@@ -172,6 +197,7 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/pl/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://drjoelgambin.com/de/"/>
@@ -186,6 +212,7 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/ro/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://drjoelgambin.com/de/"/>
@@ -200,6 +227,7 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/bg/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://drjoelgambin.com/de/"/>
@@ -214,6 +242,7 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/ru/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://drjoelgambin.com/de/"/>
@@ -228,6 +257,7 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/uk/</loc>
+    <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://drjoelgambin.com/de/"/>

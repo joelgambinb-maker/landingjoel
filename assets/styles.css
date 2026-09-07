@@ -614,3 +614,7 @@ table.compare { border-collapse: collapse; width: 100%; font-size: 14px; min-wid
 @media (max-width: 480px) {
   .hero-photo h1 { overflow-wrap: anywhere; }
 }
+
+/* ---------- Mapas con carga al pulsar (sin cookies de Google hasta entonces) ---------- */
+.sede-band .map .map-load { display: flex; align-items: center; justify-content: center; gap: 9px; height: 190px; border-radius: 14px; background: rgba(255, 255, 255, 0.07); border: 1px dashed rgba(255, 255, 255, 0.3); color: #fff; font-weight: 700; font-size: 14.5px; text-decoration: none; transition: background 0.15s ease, border-color 0.15s ease; }
+.sede-band .map .map-load:hover { background: rgba(255, 255, 255, 0.13); border-color: rgba(255, 255, 255, 0.55); color: #fff; }
