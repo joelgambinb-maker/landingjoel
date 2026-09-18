@@ -58,18 +58,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Aviso de cookies: gobierna la etiqueta de Google Ads (modo de consentimiento) y los mapas de Google.
   var CB = {
-    es: ["Usamos cookies solo para medir si nuestros anuncios de Google traen pacientes y para mostrar los mapas de Google. Sin tu permiso no se instala ninguna cookie.", "Más información", "Aceptar", "Rechazar"],
-    en: ["We use cookies only to measure whether our Google ads bring patients and to show Google maps. Without your permission no cookie is set.", "More information", "Accept", "Reject"],
-    de: ["Wir verwenden Cookies nur, um zu messen, ob unsere Google-Anzeigen Patienten bringen, und um Google-Karten anzuzeigen. Ohne Ihre Zustimmung wird kein Cookie gesetzt.", "Mehr erfahren", "Akzeptieren", "Ablehnen"],
-    fr: ["Nous utilisons des cookies uniquement pour mesurer si nos annonces Google nous amènent des patients et pour afficher les cartes Google. Sans votre accord, aucun cookie n'est déposé.", "En savoir plus", "Accepter", "Refuser"],
-    nl: ["We gebruiken cookies alleen om te meten of onze Google-advertenties patiënten opleveren en om Google-kaarten te tonen. Zonder uw toestemming wordt geen cookie geplaatst.", "Meer informatie", "Accepteren", "Weigeren"],
-    no: ["Vi bruker informasjonskapsler bare for å måle om Google-annonsene våre gir pasienter og for å vise Google-kart. Uten ditt samtykke settes ingen informasjonskapsler.", "Mer informasjon", "Godta", "Avslå"],
-    sv: ["Vi använder cookies enbart för att mäta om våra Google-annonser ger patienter och för att visa Google-kartor. Utan ditt samtycke sätts inga cookies.", "Mer information", "Acceptera", "Avböj"],
-    pl: ["Używamy plików cookie wyłącznie po to, aby mierzyć, czy nasze reklamy Google przynoszą pacjentów, oraz aby wyświetlać mapy Google. Bez Twojej zgody żaden plik cookie nie zostanie zapisany.", "Więcej informacji", "Akceptuję", "Odrzucam"],
-    ro: ["Folosim cookie-uri doar pentru a măsura dacă anunțurile noastre Google aduc pacienți și pentru a afișa hărțile Google. Fără acordul dumneavoastră nu se instalează niciun cookie.", "Mai multe informații", "Accept", "Refuz"],
-    bg: ["Използваме бисквитки само за да измерим дали рекламите ни в Google водят пациенти и за да покажем картите на Google. Без вашето съгласие не се инсталира никаква бисквитка.", "Повече информация", "Приемам", "Отказвам"],
-    ru: ["Мы используем cookie только для того, чтобы понять, приводит ли наша реклама в Google пациентов, и чтобы показывать карты Google. Без вашего согласия cookie не устанавливаются.", "Подробнее", "Принять", "Отклонить"],
-    uk: ["Ми використовуємо cookie лише для того, щоб зрозуміти, чи приводить наша реклама в Google пацієнтів, і щоб показувати карти Google. Без вашої згоди cookie не встановлюються.", "Докладніше", "Прийняти", "Відхилити"]
+    es: ["Utilizamos cookies únicamente para medir los resultados de nuestros anuncios de Google y para mostrar los mapas de las sedes. No se instala ninguna cookie sin tu consentimiento.", "Política de cookies", "Aceptar", "Rechazar", "Cookies"],
+    en: ["We use cookies only to measure the results of our Google ads and to display the location maps. No cookie is set without your consent.", "Cookie policy", "Accept", "Reject", "Cookies"],
+    de: ["Wir verwenden Cookies ausschließlich, um die Ergebnisse unserer Google-Anzeigen zu messen und die Standortkarten anzuzeigen. Ohne Ihre Einwilligung wird kein Cookie gesetzt.", "Cookie-Richtlinie", "Akzeptieren", "Ablehnen", "Cookies"],
+    fr: ["Nous utilisons des cookies uniquement pour mesurer les résultats de nos annonces Google et afficher les cartes de nos centres. Aucun cookie n'est déposé sans votre consentement.", "Politique de cookies", "Accepter", "Refuser", "Cookies"],
+    nl: ["We gebruiken cookies uitsluitend om de resultaten van onze Google-advertenties te meten en de locatiekaarten te tonen. Zonder uw toestemming wordt geen cookie geplaatst.", "Cookiebeleid", "Accepteren", "Weigeren", "Cookies"],
+    no: ["Vi bruker informasjonskapsler kun for å måle resultatene av Google-annonsene våre og for å vise kart over klinikkene. Ingen informasjonskapsler settes uten ditt samtykke.", "Retningslinjer for informasjonskapsler", "Godta", "Avslå", "Informasjonskapsler"],
+    sv: ["Vi använder cookies enbart för att mäta resultatet av våra Google-annonser och för att visa kartor över mottagningarna. Inga cookies sätts utan ditt samtycke.", "Cookiepolicy", "Acceptera", "Avböj", "Cookies"],
+    pl: ["Używamy plików cookie wyłącznie do mierzenia wyników naszych reklam Google oraz do wyświetlania map placówek. Bez Twojej zgody nie jest zapisywany żaden plik cookie.", "Polityka cookies", "Akceptuję", "Odrzucam", "Pliki cookie"],
+    ro: ["Folosim cookie-uri exclusiv pentru a măsura rezultatele anunțurilor noastre Google și pentru a afișa hărțile centrelor. Niciun cookie nu se instalează fără consimțământul dumneavoastră.", "Politica de cookie-uri", "Accept", "Refuz", "Cookie-uri"],
+    bg: ["Използваме бисквитки единствено за да измерваме резултатите от рекламите ни в Google и за да показваме картите на клиниките. Без вашето съгласие не се инсталира никаква бисквитка.", "Политика за бисквитките", "Приемам", "Отказвам", "Бисквитки"],
+    ru: ["Мы используем cookie исключительно для оценки результатов нашей рекламы в Google и для показа карт клиник. Без вашего согласия cookie не устанавливаются.", "Политика cookie", "Принять", "Отклонить", "Файлы cookie"],
+    uk: ["Ми використовуємо cookie виключно для оцінки результатів нашої реклами в Google і для показу карт клінік. Без вашої згоди cookie не встановлюються.", "Політика cookie", "Прийняти", "Відхилити", "Файли cookie"]
   };
   function consentStored() {
     try {
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     bar.className = "cookie-bar";
     bar.setAttribute("role", "dialog");
     bar.setAttribute("aria-label", "Cookies");
-    bar.innerHTML = '<p>' + t[0] + ' <a href="/privacidad/#cookies">' + t[1] + '</a></p>' +
+    bar.innerHTML = '<p class="cb-title">' + t[4] + '</p><p>' + t[0] + ' <a href="/privacidad/#cookies">' + t[1] + '</a></p>' +
       '<div class="cb-actions"><button type="button" class="cb-reject">' + t[3] + '</button><button type="button" class="cb-accept">' + t[2] + '</button></div>';
     bar.querySelector(".cb-accept").addEventListener("click", function () { saveConsent("granted"); bar.remove(); });
     bar.querySelector(".cb-reject").addEventListener("click", function () { saveConsent("denied"); bar.remove(); });
