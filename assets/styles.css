@@ -86,6 +86,9 @@ li { margin: 6px 0; }
 .nav a:hover { color: var(--teal); }
 .nav .lang { font-size: 12.5px; font-weight: 800; color: var(--head); border: 1.5px solid var(--line); border-radius: 999px; padding: 5px 13px; }
 .nav .lang:hover { color: var(--teal); border-color: var(--sky); }
+.nav .nav-app { display: inline-flex; align-items: center; gap: 7px; font-size: 13.5px; font-weight: 800; color: var(--head); border: 1.5px solid var(--line); border-radius: 999px; padding: 7px 14px; white-space: nowrap; }
+.nav .nav-app svg { width: 15px; height: 15px; display: block; }
+.nav .nav-app:hover { color: var(--teal); border-color: var(--sky); }
 .nav-toggle { display: none; background: none; border: 1.5px solid var(--line); border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 700; cursor: pointer; color: var(--head); font-family: inherit; }
 @media (max-width: 880px) {
   .nav-toggle { display: block; }
@@ -107,6 +110,7 @@ li { margin: 6px 0; }
   .nav a { padding: 12px 2px; border-bottom: 1px solid var(--line); }
   .nav a:last-child { border-bottom: none; }
   .nav .lang { text-align: center; margin-top: 10px; }
+  .nav .nav-app { justify-content: center; margin-top: 12px; padding: 11px 14px; border-bottom: 1.5px solid var(--line); }
 }
 
 /* ---------- Botones (píldoras negras, como la referencia) ---------- */

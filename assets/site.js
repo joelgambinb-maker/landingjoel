@@ -117,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (h.indexOf("tel:") === 0) track("Llamada", { page: location.pathname });
     else if (h.indexOf("wa.me") !== -1) track("WhatsApp", { page: location.pathname });
     else if (h.indexOf("doctoralia.es") !== -1) track("Reserva", { page: location.pathname, via: "enlace" });
+    else if (h.indexOf("app.drjoelgambin.com") !== -1) track("AreaPacientes", { page: location.pathname });
     else if (a.hasAttribute("hreflang") && a.closest(".lang-menu")) track("Idioma", { to: a.getAttribute("hreflang"), from: document.documentElement.lang });
   });
   var widgetTracked = false;
