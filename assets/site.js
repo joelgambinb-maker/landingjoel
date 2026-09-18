@@ -56,20 +56,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Aviso de cookies: solo gobierna la etiqueta de Google Ads (modo de consentimiento).
+  // Aviso de cookies: gobierna la etiqueta de Google Ads (modo de consentimiento) y los mapas de Google.
   var CB = {
-    es: ["Usamos cookies solo para medir si nuestros anuncios de Google traen pacientes. Sin tu permiso no se instala ninguna cookie.", "Más información", "Aceptar", "Rechazar"],
-    en: ["We use cookies only to measure whether our Google ads bring patients. Without your permission no cookie is set.", "More information", "Accept", "Reject"],
-    de: ["Wir verwenden Cookies nur, um zu messen, ob unsere Google-Anzeigen Patienten bringen. Ohne Ihre Zustimmung wird kein Cookie gesetzt.", "Mehr erfahren", "Akzeptieren", "Ablehnen"],
-    fr: ["Nous utilisons des cookies uniquement pour mesurer si nos annonces Google nous amènent des patients. Sans votre accord, aucun cookie n'est déposé.", "En savoir plus", "Accepter", "Refuser"],
-    nl: ["We gebruiken cookies alleen om te meten of onze Google-advertenties patiënten opleveren. Zonder uw toestemming wordt geen cookie geplaatst.", "Meer informatie", "Accepteren", "Weigeren"],
-    no: ["Vi bruker informasjonskapsler bare for å måle om Google-annonsene våre gir pasienter. Uten ditt samtykke settes ingen informasjonskapsler.", "Mer informasjon", "Godta", "Avslå"],
-    sv: ["Vi använder cookies enbart för att mäta om våra Google-annonser ger patienter. Utan ditt samtycke sätts inga cookies.", "Mer information", "Acceptera", "Avböj"],
-    pl: ["Używamy plików cookie wyłącznie po to, aby mierzyć, czy nasze reklamy Google przynoszą pacjentów. Bez Twojej zgody żaden plik cookie nie zostanie zapisany.", "Więcej informacji", "Akceptuję", "Odrzucam"],
-    ro: ["Folosim cookie-uri doar pentru a măsura dacă anunțurile noastre Google aduc pacienți. Fără acordul dumneavoastră nu se instalează niciun cookie.", "Mai multe informații", "Accept", "Refuz"],
-    bg: ["Използваме бисквитки само за да измерим дали рекламите ни в Google водят пациенти. Без вашето съгласие не се инсталира никаква бисквитка.", "Повече информация", "Приемам", "Отказвам"],
-    ru: ["Мы используем cookie только для того, чтобы понять, приводит ли наша реклама в Google пациентов. Без вашего согласия cookie не устанавливаются.", "Подробнее", "Принять", "Отклонить"],
-    uk: ["Ми використовуємо cookie лише для того, щоб зрозуміти, чи приводить наша реклама в Google пацієнтів. Без вашої згоди cookie не встановлюються.", "Докладніше", "Прийняти", "Відхилити"]
+    es: ["Usamos cookies solo para medir si nuestros anuncios de Google traen pacientes y para mostrar los mapas de Google. Sin tu permiso no se instala ninguna cookie.", "Más información", "Aceptar", "Rechazar"],
+    en: ["We use cookies only to measure whether our Google ads bring patients and to show Google maps. Without your permission no cookie is set.", "More information", "Accept", "Reject"],
+    de: ["Wir verwenden Cookies nur, um zu messen, ob unsere Google-Anzeigen Patienten bringen, und um Google-Karten anzuzeigen. Ohne Ihre Zustimmung wird kein Cookie gesetzt.", "Mehr erfahren", "Akzeptieren", "Ablehnen"],
+    fr: ["Nous utilisons des cookies uniquement pour mesurer si nos annonces Google nous amènent des patients et pour afficher les cartes Google. Sans votre accord, aucun cookie n'est déposé.", "En savoir plus", "Accepter", "Refuser"],
+    nl: ["We gebruiken cookies alleen om te meten of onze Google-advertenties patiënten opleveren en om Google-kaarten te tonen. Zonder uw toestemming wordt geen cookie geplaatst.", "Meer informatie", "Accepteren", "Weigeren"],
+    no: ["Vi bruker informasjonskapsler bare for å måle om Google-annonsene våre gir pasienter og for å vise Google-kart. Uten ditt samtykke settes ingen informasjonskapsler.", "Mer informasjon", "Godta", "Avslå"],
+    sv: ["Vi använder cookies enbart för att mäta om våra Google-annonser ger patienter och för att visa Google-kartor. Utan ditt samtycke sätts inga cookies.", "Mer information", "Acceptera", "Avböj"],
+    pl: ["Używamy plików cookie wyłącznie po to, aby mierzyć, czy nasze reklamy Google przynoszą pacjentów, oraz aby wyświetlać mapy Google. Bez Twojej zgody żaden plik cookie nie zostanie zapisany.", "Więcej informacji", "Akceptuję", "Odrzucam"],
+    ro: ["Folosim cookie-uri doar pentru a măsura dacă anunțurile noastre Google aduc pacienți și pentru a afișa hărțile Google. Fără acordul dumneavoastră nu se instalează niciun cookie.", "Mai multe informații", "Accept", "Refuz"],
+    bg: ["Използваме бисквитки само за да измерим дали рекламите ни в Google водят пациенти и за да покажем картите на Google. Без вашето съгласие не се инсталира никаква бисквитка.", "Повече информация", "Приемам", "Отказвам"],
+    ru: ["Мы используем cookie только для того, чтобы понять, приводит ли наша реклама в Google пациентов, и чтобы показывать карты Google. Без вашего согласия cookie не устанавливаются.", "Подробнее", "Принять", "Отклонить"],
+    uk: ["Ми використовуємо cookie лише для того, щоб зрозуміти, чи приводить наша реклама в Google пацієнтів, і щоб показувати карти Google. Без вашої згоди cookie не встановлюються.", "Докладніше", "Прийняти", "Відхилити"]
   };
   function consentStored() {
     try {
@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var s = v === "granted" ? "granted" : "denied";
       window.gtag("consent", "update", { ad_storage: s, ad_user_data: s, ad_personalization: s });
     }
+    if (v === "granted") loadAllMaps();
   }
   function showBanner() {
     if (document.querySelector(".cookie-bar")) return;
@@ -127,19 +128,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Mapas de Google: se cargan al pulsar, para no dejar cookies de terceros antes.
+  // Mapas de Google: se muestran solos cuando hay consentimiento de cookies
+  // (guardado o recién dado en el aviso); si no lo hay, se cargan al pulsar.
+  function loadMap(a, auto) {
+    var f = document.createElement("iframe");
+    f.src = a.getAttribute("data-embed");
+    f.title = a.getAttribute("data-title") || "";
+    f.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
+    f.setAttribute("allowfullscreen", "");
+    f.setAttribute("loading", "lazy");
+    a.replaceWith(f);
+    if (!auto) track("Mapa", { sede: a.getAttribute("data-title") || "" });
+  }
+  function loadAllMaps() {
+    document.querySelectorAll(".map-load").forEach(function (a) { loadMap(a, true); });
+  }
   document.querySelectorAll(".map-load").forEach(function (a) {
-    a.addEventListener("click", function (e) {
-      e.preventDefault();
-      var f = document.createElement("iframe");
-      f.src = a.getAttribute("data-embed");
-      f.title = a.getAttribute("data-title") || "";
-      f.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
-      f.setAttribute("allowfullscreen", "");
-      a.replaceWith(f);
-      track("Mapa", { sede: a.getAttribute("data-title") || "" });
-    });
+    a.addEventListener("click", function (e) { e.preventDefault(); loadMap(a, false); });
   });
+  if (consentStored() === "granted") loadAllMaps();
 
   // Widget de reserva de Doctoralia: el script se carga cuando el
   // calendario se acerca al viewport, para no penalizar la carga inicial.
