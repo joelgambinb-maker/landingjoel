@@ -329,6 +329,8 @@ a.card:hover h3, a.card:hover .more { color: var(--teal); }
 .timeline .when { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sky); font-weight: 700; }
 .timeline h3 { font-size: 17px; margin: 5px 0 4px; }
 .timeline p { font-size: 15px; color: var(--muted); margin: 0; }
+.timeline p + p { margin-top: 9px; }
+.nobr { white-space: nowrap; }
 
 /* ---------- FAQ ---------- */
 .faq { max-width: 740px; }
