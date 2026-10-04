@@ -519,6 +519,7 @@ table.compare { border-collapse: collapse; width: 100%; font-size: 14px; min-wid
 .diagram { background: #fff; border-radius: var(--r-card); box-shadow: var(--shadow); padding: 22px; margin: 20px 0; max-width: 540px; }
 .diagram svg { width: 100%; height: auto; display: block; }
 .diagram .cap { font-size: 13px; color: var(--muted); margin: 12px 0 0; text-align: center; }
+.diagram.photo img { width: 100%; height: auto; display: block; border-radius: 12px; }
 
 .refs { font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; margin-top: 38px; max-width: 700px; }
 .refs ol { padding-left: 18px; margin: 6px 0 0; }
