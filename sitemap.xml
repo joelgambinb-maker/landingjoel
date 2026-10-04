@@ -111,6 +111,18 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/sutura-menisco/"/>
   </url>
   <url>
+    <loc>https://drjoelgambin.com/tratamientos/cirugia-juanetes/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/cirugia-juanetes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/bunion-surgery/"/>
+  </url>
+  <url>
+    <loc>https://drjoelgambin.com/en/treatments/bunion-surgery/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/cirugia-juanetes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/bunion-surgery/"/>
+  </url>
+  <url>
     <loc>https://drjoelgambin.com/tratamientos/microinestabilidad-tobillo/</loc>
     <lastmod>2026-09-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/ankle-microinstability/"/>

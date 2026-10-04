@@ -1,6 +1,6 @@
 # Dr. Joel Gambín Botella — traumatólogo y cirujano ortopédico (Torrevieja, Elche y Alicante, España)
 
-> Especialista en Cirugía Ortopédica y Traumatología dedicado a la rodilla, el tobillo y el pie: cirugía artroscópica, ligamento cruzado anterior, menisco, inestabilidad de tobillo, preservación articular (infiltraciones ecoguiadas, ácido hialurónico, PRP) y cirugía percutánea del pie (MIS). Traumatología deportiva. Consulta en español e inglés.
+> Especialista en Cirugía Ortopédica y Traumatología dedicado a la rodilla, el tobillo y el pie: cirugía artroscópica, ligamento cruzado anterior, menisco, inestabilidad de tobillo, preservación articular (infiltraciones ecoguiadas, ácido hialurónico, PRP) y cirugía percutánea del pie (MIS: juanetes, dedos en garra, metatarsalgia). Traumatología deportiva. Consulta en español e inglés.
 
 ## Datos verificables
 - Colegiado n.º 460311992, Ilustre Colegio Oficial de Médicos de Valencia.
@@ -28,6 +28,7 @@
 - [Artroscopia de tobillo](https://drjoelgambin.com/tratamientos/artroscopia-tobillo/)
 - [Microinestabilidad de tobillo](https://drjoelgambin.com/tratamientos/microinestabilidad-tobillo/)
 - [Preservación articular](https://drjoelgambin.com/tratamientos/preservacion-articular/)
+- [Cirugía de juanetes (hallux valgus), percutánea](https://drjoelgambin.com/tratamientos/cirugia-juanetes/)
 
 ## Otros idiomas
 Páginas resumen en alemán (/de/), francés (/fr/), neerlandés (/nl/), noruego (/no/), sueco (/sv/), polaco (/pl/), rumano (/ro/), búlgaro (/bg/), ruso (/ru/) y ucraniano (/uk/). Las consultas se atienden en español o inglés.
