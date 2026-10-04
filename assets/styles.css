@@ -365,6 +365,8 @@ a.card:hover h3, a.card:hover .more { color: var(--teal); }
 .page-hero .hero-fig { background: #fff; border-radius: var(--r-card); box-shadow: var(--shadow); padding: 14px 16px 8px; }
 .page-hero .hero-fig svg { width: 100%; height: auto; display: block; }
 .page-hero .hero-img { width: 100%; height: auto; aspect-ratio: 4 / 3; max-height: 360px; object-fit: cover; border-radius: var(--r-card); box-shadow: var(--shadow); display: block; }
+.page-hero .hero-shot { margin: 0; }
+.page-hero .hero-shot figcaption { font-size: 13px; line-height: 1.45; color: var(--muted); margin-top: 10px; }
 @media (max-width: 880px) { .page-hero .hero-cols { grid-template-columns: 1fr; gap: 22px; } .page-hero .hero-img { max-height: 240px; } }
 .crumbs { font-size: 13px; color: var(--muted); margin-bottom: 20px; }
 .crumbs a { color: var(--muted); text-decoration: none; }
