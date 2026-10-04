@@ -149,6 +149,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   if (consentStored() === "granted") loadAllMaps();
 
+  // Carrusel de tratamientos de la portada: flechas y desplazamiento por tarjeta.
+  document.querySelectorAll(".service-cards.carousel").forEach(function (track) {
+    var head = track.previousElementSibling;
+    var nav = head && head.querySelector(".car-nav");
+    if (!nav) return;
+    var prev = nav.querySelector(".car-prev"), next = nav.querySelector(".car-next");
+    function step() { var c = track.querySelector(".service-card"); return c ? c.getBoundingClientRect().width + 22 : 320; }
+    function update() {
+      var max = track.scrollWidth - track.clientWidth - 2;
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft >= max;
+    }
+    prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: "smooth" }); });
+    next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: "smooth" }); });
+    track.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  });
+
   // Vídeos de YouTube: miniatura sin cookies; el reproductor (dominio youtube-nocookie) se carga al pulsar.
   document.querySelectorAll(".video-load").forEach(function (a) {
     a.addEventListener("click", function (e) {
