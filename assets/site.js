@@ -149,6 +149,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   if (consentStored() === "granted") loadAllMaps();
 
+  // Vídeos de YouTube: miniatura sin cookies; el reproductor (dominio youtube-nocookie) se carga al pulsar.
+  document.querySelectorAll(".video-load").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      var f = document.createElement("iframe");
+      f.src = a.getAttribute("data-embed");
+      f.title = a.getAttribute("data-title") || "";
+      f.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
+      f.setAttribute("allowfullscreen", "");
+      f.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+      a.replaceWith(f);
+      track("Video", { page: location.pathname });
+    });
+  });
+
   // Widget de reserva de Doctoralia: el script se carga cuando el
   // calendario se acerca al viewport, para no penalizar la carga inicial.
   var frame = document.querySelector(".bw-frame");
