@@ -346,6 +346,9 @@ a.card:hover h3, a.card:hover .more { color: var(--teal); }
 .page-hero { background: linear-gradient(180deg, var(--bg-soft) 0%, #F5F7F7 100%); padding: 64px 0 44px; }
 .page-hero h1 { max-width: 26ch; font-size: clamp(30px, 4.4vw, 44px); }
 .page-hero .lead { color: var(--muted); font-size: 17.5px; max-width: 58ch; margin: 16px 0 0; }
+.page-hero .hero-cols { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: center; }
+.page-hero .hero-img { width: 100%; height: auto; aspect-ratio: 4 / 3; max-height: 360px; object-fit: cover; border-radius: var(--r-card); box-shadow: var(--shadow); display: block; }
+@media (max-width: 880px) { .page-hero .hero-cols { grid-template-columns: 1fr; gap: 22px; } .page-hero .hero-img { max-height: 240px; } }
 .crumbs { font-size: 13px; color: var(--muted); margin-bottom: 20px; }
 .crumbs a { color: var(--muted); text-decoration: none; }
 .crumbs a:hover { color: var(--teal); }
