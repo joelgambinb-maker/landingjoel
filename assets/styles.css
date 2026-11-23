@@ -692,3 +692,27 @@ table.compare { border-collapse: collapse; width: 100%; font-size: 14px; min-wid
 /* Nota de opiniones en las páginas de cada sede */
 .rev-note { margin-top: 18px; max-width: none; color: var(--muted); font-size: .97rem; }
 .rev-note a { font-weight: 700; }
+
+/* Prótesis de rodilla: figura de las piezas y figura lateral (brazo robótico) */
+.parts { display: grid; grid-template-columns: 168px 1fr; gap: 28px; background: #fff; border-radius: var(--r-card); box-shadow: var(--shadow); padding: 24px 28px; margin: 20px 0 22px; max-width: 640px; }
+.parts figure { margin: 0; }
+.parts img { width: 100%; height: auto; }
+.parts ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; justify-content: space-around; counter-reset: part; }
+.parts li { margin: 0; padding-left: 40px; position: relative; font-size: 15px; color: var(--muted); counter-increment: part; }
+.parts li::before { content: counter(part); position: absolute; left: 0; top: 0; width: 27px; height: 27px; border-radius: 50%; background: var(--panel); color: #fff; font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; }
+.parts li strong { display: block; color: var(--head); font-size: 16px; margin-bottom: 2px; }
+.fig-row { display: grid; grid-template-columns: 1fr 190px; gap: 36px; align-items: start; }
+.fig-row > div > :last-child { margin-bottom: 0; }
+.fig-side { margin: 6px 0 0; }
+.fig-side img { width: 100%; height: auto; }
+.fig-side figcaption { font-size: 12.5px; line-height: 1.45; color: var(--muted); margin-top: 10px; text-align: center; }
+.service-cards.cols-3 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.service-card .thumb.fit { background: #233B45; }
+.service-card .thumb.fit img { object-fit: contain; }
+@media (max-width: 620px) {
+  .parts { grid-template-columns: 1fr; gap: 20px; padding: 22px; }
+  .parts figure { width: 150px; margin: 0 auto; }
+  .parts ol { gap: 16px; }
+  .fig-row { grid-template-columns: 1fr; gap: 20px; }
+  .fig-side { width: 180px; margin: 0 auto; }
+}
