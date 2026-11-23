@@ -37,8 +37,13 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/preservacion-articular/</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/joint-preservation/"/>
+  </url>
+  <url>
+    <loc>https://drjoelgambin.com/tratamientos/protesis-rodilla/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/knee-replacement/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/contacto/</loc>
@@ -82,8 +87,13 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/joint-preservation/</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/preservacion-articular/"/>
+  </url>
+  <url>
+    <loc>https://drjoelgambin.com/en/treatments/knee-replacement/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/protesis-rodilla/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/contact/</loc>
