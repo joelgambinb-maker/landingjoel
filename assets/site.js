@@ -1,8 +1,10 @@
 document.documentElement.classList.add("js");
 
-// Google Ads: etiqueta AW-18436478485. Las etiquetas de cada conversión se rellenan cuando Google las facilita.
+// Google Ads: etiqueta AW-18436478485 y conversión «Reserva de cita».
+// Solo cuentan los intentos de contacto reales (llamada desde un móvil, WhatsApp o reserva en Doctoralia)
+// y una sola vez por visita. Los clics en opiniones, textos legales o mapas no son conversiones.
+// Si en Google Ads se crean conversiones separadas, basta con poner aquí la etiqueta de cada una.
 var ADS_ID = "AW-18436478485";
-// De momento, llamada y WhatsApp cuentan como "Reserva de cita" (una sola conversión de contacto).
 var ADS_LABELS = { Llamada: "dmCOCIGPz_AcEJWsmddE", WhatsApp: "dmCOCIGPz_AcEJWsmddE", Reserva: "dmCOCIGPz_AcEJWsmddE" };
 
 
@@ -103,20 +105,42 @@ document.addEventListener("DOMContentLoaded", function () {
     a.addEventListener("click", function (e) { e.preventDefault(); showBanner(); });
   });
 
-  // Medición sin cookies (Plausible): llamada, WhatsApp, reserva, idioma y mapa.
-  function track(name, props) {
+  // Medición sin cookies (Plausible): llamada, WhatsApp, reserva, opiniones, cómo llegar, idioma y mapa.
+  // La conversión de Google Ads se envía como mucho una vez por visita y etiqueta.
+  function adsOnce(label) {
+    try {
+      var k = "jg-ads-" + label;
+      if (sessionStorage.getItem(k)) return false;
+      sessionStorage.setItem(k, "1");
+    } catch (e) {}
+    return true;
+  }
+  function track(name, props, noAds) {
     if (typeof window.plausible === "function") window.plausible(name, { props: props || {} });
-    if (ADS_LABELS[name] && typeof window.gtag === "function") {
-      window.gtag("event", "conversion", { send_to: ADS_ID + "/" + ADS_LABELS[name] });
+    var label = ADS_LABELS[name];
+    if (label && !noAds && typeof window.gtag === "function" && adsOnce(label)) {
+      window.gtag("event", "conversion", { send_to: ADS_ID + "/" + label });
     }
   }
+  // En un ordenador, pulsar un teléfono casi nunca acaba en llamada: se anota, pero no cuenta como conversión.
+  var IS_PHONE = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) || (navigator.maxTouchPoints || 0) > 1;
+  var RE_OPINION = /opini|review|rese[ñn]a|bewertung|recens|recenz|omd[öo]me|omtale|opinie|отзыв|відгук|отзив/i;
+  var RE_LEGAL = /^\/(privacidad|aviso-legal)\//;
   document.addEventListener("click", function (e) {
     var a = e.target.closest ? e.target.closest("a") : null;
     if (!a) return;
     var h = a.getAttribute("href") || "";
-    if (h.indexOf("tel:") === 0) track("Llamada", { page: location.pathname });
+    if (h.indexOf("tel:") === 0) track("Llamada", { page: location.pathname }, !IS_PHONE);
     else if (h.indexOf("wa.me") !== -1) track("WhatsApp", { page: location.pathname });
-    else if (h.indexOf("doctoralia.es") !== -1) track("Reserva", { page: location.pathname, via: "enlace" });
+    else if (h.indexOf("doctoralia.es") !== -1) {
+      // Solo es reserva el enlace de cita; los de opiniones (pie de página incluido) no, y los de textos legales no se anotan.
+      if (RE_LEGAL.test(location.pathname) && !a.closest("footer")) return;
+      if (a.closest("footer") || h.indexOf("anade-opinion") !== -1 || RE_OPINION.test(a.textContent || "")) {
+        track("Opiniones", { page: location.pathname, sitio: "Doctoralia" });
+      } else track("Reserva", { page: location.pathname, via: "enlace" });
+    }
+    else if (h.indexOf("search.google.com/local/writereview") !== -1) track("Opiniones", { page: location.pathname, sitio: "Google" });
+    else if (h.indexOf("maps.google.com/maps?cid=") !== -1 && !a.classList.contains("map-load")) track("ComoLlegar", { page: location.pathname });
     else if (h.indexOf("app.drjoelgambin.com") !== -1) track("AreaPacientes", { page: location.pathname });
     else if (a.hasAttribute("hreflang") && a.closest(".lang-menu")) track("Idioma", { to: a.getAttribute("hreflang"), from: document.documentElement.lang });
   });

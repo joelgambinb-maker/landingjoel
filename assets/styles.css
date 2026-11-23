@@ -688,3 +688,7 @@ table.compare { border-collapse: collapse; width: 100%; font-size: 14px; min-wid
 .article .map .map-load:hover { background: #fff; border-color: var(--sky); }
 .article .service-cards { margin-top: 18px; }
 .article .btn-row { margin-top: 22px; }
+
+/* Nota de opiniones en las páginas de cada sede */
+.rev-note { margin-top: 18px; max-width: none; color: var(--muted); font-size: .97rem; }
+.rev-note a { font-weight: 700; }
