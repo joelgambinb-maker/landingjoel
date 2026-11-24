@@ -27,18 +27,23 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/artroscopia-rodilla/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/knee-arthroscopy/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/artroscopia-tobillo/</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/ankle-arthroscopy/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/preservacion-articular/</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/joint-preservation/"/>
+  </url>
+  <url>
+    <loc>https://drjoelgambin.com/tratamientos/protesis-rodilla/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/knee-replacement/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/contacto/</loc>
@@ -62,28 +67,33 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/about/</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/sobre-mi/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/acl-surgery/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/ligamento-cruzado-anterior/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/knee-arthroscopy/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/artroscopia-rodilla/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/ankle-arthroscopy/</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/artroscopia-tobillo/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/joint-preservation/</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/preservacion-articular/"/>
+  </url>
+  <url>
+    <loc>https://drjoelgambin.com/en/treatments/knee-replacement/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/protesis-rodilla/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/contact/</loc>
@@ -92,7 +102,7 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/tenodesis-lemaire/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/lemaire-tenodesis/"/>
   </url>
   <url>
@@ -102,13 +112,13 @@
   </url>
   <url>
     <loc>https://drjoelgambin.com/tratamientos/cirugia-juanetes/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/cirugia-juanetes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/bunion-surgery/"/>
   </url>
   <url>
     <loc>https://drjoelgambin.com/en/treatments/bunion-surgery/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://drjoelgambin.com/tratamientos/cirugia-juanetes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drjoelgambin.com/en/treatments/bunion-surgery/"/>
   </url>
